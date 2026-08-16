@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dominik Šišan | Online Trenér</title>
+
+    <meta
+            name="description"
+            content="Pomáhám lidem dosahovat jejich fyzických i mentálních cílů pomocí individuálního koučinku."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+    >
+
+    <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    >
+
+    <link
+            rel="stylesheet"
+            href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header class="header">
+
+    <div class="container">
+
+        <nav class="navbar">
+
+            <a
+                    href="#"
+                    class="logo"
+            >
+                DS
+            </a>
+
+
+            <button
+                    class="menu-toggle"
+                    type="button"
+                    aria-label="Otevřít menu"
+                    aria-expanded="false"
+                    aria-controls="main-navigation"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <ul
+                    class="nav-links"
+                    id="main-navigation"
+            >
+
+                <li>
+                    <a href="#about">
+                        O Mně
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#services">
+                        Spolupráce
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#reviews">
+                        Recenze
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        Kontakt
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+    <!-- ==================================================
+         HERO
+    ================================================== -->
+
+    <section class="hero">
+
+        <div class="container hero-grid">
+
+
+            <div class="hero-content">
+
+            <span class="hero-subtitle">
+                ONLINE TRENÉR
+            </span>
+
+
+                <h1 class="hero-title">
+
+                    <span>DOMINIK</span>
+                    <span>ŠIŠÁN</span>
+
+                </h1>
+
+
+                <p class="hero-description">
+                    Pomáhám lidem dosahovat
+                    jejich fyzických i mentálních cílů.
+                </p>
+
+
+                <a
+                        href="#contact"
+                        class="button button-primary"
+                >
+
+                <span>
+                    CHCI ZMĚNU
+                </span>
+
+                    <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true"
+                    >
+
+                        <path
+                                d="M20 12C20 16.418 16.418 20 12 20C10.43 20 8.966 19.55 7.73 18.77L4 20L5.28 16.42C4.48 15.19 4 13.64 4 12C4 7.582 7.582 4 12 4C16.418 4 20 7.582 20 12Z"
+                                stroke="currentColor"
+                                stroke-width="2"
+                        />
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+
+
+            <div class="hero-image">
+
+                <img
+                        src="images/Dominik2.png"
+                        alt="Dominik Šišan"
+                >
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         ABOUT
+    ================================================== -->
+
+    <section
+            id="about"
+            class="about"
+    >
+
+        <div class="container">
+
+            <div class="about-card">
+
+
+                <div class="about-content">
+
+                    <span class="section-label"></span>
+
+
+                    <h2>
+                        O MNĚ
+                    </h2>
+
+
+                    <p>
+                        Ahoj,
+                        jsem Dominik.
+
+                        Fitness je mojí vášní už několik let.
+
+                        Pomáhám lidem měnit jejich životní styl,
+                        budovat sebevědomí
+                        a dosahovat výsledků bez extrémů
+                        a zbytečných diet.
+                    </p>
+
+
+                    <button
+                            class="video-link"
+                            id="videoBtn"
+                            type="button"
+                    >
+
+                    <span>
+                        ▶
+                    </span>
+
+                        PŘEHRÁT VIDEO
+
+                    </button>
+
+                </div>
+
+
+
+                <div class="about-video">
+
+                    <img
+                            src="images/videotest.png"
+                            alt="Představení"
+                    >
+
+
+                    <button
+                            class="video-play"
+                            id="videoBtn2"
+                            type="button"
+                            aria-label="Přehrát video"
+                    >
+                        ▶
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             VIDEO MODAL
+        ================================================== -->
+
+        <div
+                class="video-modal"
+                id="videoModal"
+        >
+
+            <div class="video-overlay"></div>
+
+
+            <div class="video-container">
+
+                <button
+                        class="video-close"
+                        id="closeVideo"
+                        type="button"
+                        aria-label="Zavřít video"
+                >
+                    ×
+                </button>
+
+
+                <video
+                        id="localVideo"
+                        controls
+                        playsinline
+                        preload="metadata"
+                >
+
+                    <source
+                            src="videos/video.mp4"
+                            type="video/mp4"
+                    >
+
+                    Váš prohlížeč nepodporuje
+                    přehrávání videa.
+
+                </video>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         SERVICES
+    ================================================== -->
+
+    <section
+            id="services"
+            class="services"
+    >
+
+        <div class="container">
+
+
+            <div class="section-header">
+
+            <span class="section-subtitle">
+                CO NABÍZÍM
+            </span>
+
+                <h2 class="section-title">
+                    JAK TI POMOHU
+                </h2>
+
+            </div>
+
+
+
+            <div class="services-grid">
+
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+
+                        <img
+                                src="icons/dumbell.svg"
+                                alt="Tréninkový plán"
+                        >
+
+                    </div>
+
+
+                    <h3>
+                        TRÉNINKOVÝ PLÁN
+                    </h3>
+
+
+                    <p>
+                        Individuální tréninkový plán
+                        sestavený přesně podle tvých
+                        cílů, zkušeností a možností.
+                    </p>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+
+                        <img
+                                src="icons/food.svg"
+                                alt="Jídelní plán"
+                        >
+
+                    </div>
+
+
+                    <h3>
+                        JÍDELNÍ PLÁN
+                    </h3>
+
+
+                    <p>
+                        Výživový plán přizpůsobený
+                        tvému životnímu stylu,
+                        preferencím i časovým možnostem.
+                    </p>
+
+                </article>
+
+
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+
+                        <img
+                                src="icons/handshake.svg"
+                                alt="Spolupráce"
+                        >
+
+                    </div>
+
+
+                    <h3>
+                        SPOLUPRÁCE
+                    </h3>
+
+
+                    <p>
+                        Pravidelná komunikace,
+                        kontrola progresu
+                        a podpora na každém kroku.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         REVIEWS
+    ================================================== -->
+
+    <section
+            id="reviews"
+            class="reviews"
+    >
+
+        <div class="container">
+
+
+            <div class="section-header">
+
+            <span class="section-subtitle">
+                ZKUŠENOSTI KLIENTŮ
+            </span>
+
+                <h2 class="section-title">
+                    JEJICH PROMĚNA
+                </h2>
+
+            </div>
+
+
+
+            <div class="reviews-carousel">
+
+
+                <button
+                        class="reviews-arrow reviews-prev"
+                        type="button"
+                        aria-label="Předchozí recenze"
+                >
+                    ←
+                </button>
+
+
+                <div class="reviews-viewport">
+
+                    <div class="reviews-track">
+
+
+                        <!-- REVIEW 1 -->
+
+                        <article class="review-card">
+
+                            <div class="review-content">
+
+                                <div class="review-client">
+
+                                    <div class="review-avatar">
+                                        A
+                                    </div>
+
+                                    <div>
+
+                                        <h3>
+                                            Aleš
+                                        </h3>
+
+                                        <span>
+                                        Online spolupráce
+                                    </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="review-stars">
+                                    ★★★★★
+                                </div>
+
+
+                                <p class="review-text">
+                                    „S Domčou spolupracuji už 3 roky a moc si to chválím. Začali jsme nejprve řešit stravu, protože jsem hodně makal, ale jídlo neřešil. Domča byl od začátku mým vzorem i v jiných oblastech. Podařilo se mi díky němu zlepšit významným způsobem mindset, pomohl mi i se strachem z létání, kde mi dal užitečné rady, které jsem jinde nezískal. Postupně se mi zlepšilo sebevědomí, že jsem začal natáčet videa na Instagram a překonal výzvy v oslovování jiných lidí. Rok nazpět bych řekl, že to není vůbec pro mě. V současnosti se věnujeme vylepšení pozingu a také budujeme mou osobní značku, kde začínám působit jako fitness trenér.“
+                                </p>
+
+                            </div>
+
+
+                            <div class="review-progress">
+
+                                <div class="progress-title">
+
+                                <span>
+                                    PROMĚNA
+                                </span>
+
+                                    <span></span>
+
+                                </div>
+
+
+                                <div class="review-images">
+
+                                    <div class="review-image">
+
+                                    <span class="image-label">
+                                        PŘED
+                                    </span>
+
+                                        <img
+                                                src="images/reviews/alesPRED.jpg"
+                                                alt="Aleš před proměnou"
+                                        >
+
+                                    </div>
+
+
+                                    <div class="review-arrow-small">
+                                        →
+                                    </div>
+
+
+                                    <div class="review-image">
+
+                                    <span class="image-label">
+                                        PO
+                                    </span>
+
+                                        <img
+                                                src="images/reviews/alesPO.JPG"
+                                                alt="Aleš po proměně"
+                                        >
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- REVIEW 2 -->
+
+                        <article class="review-card">
+
+                            <div class="review-content">
+
+                                <div class="review-client">
+
+                                    <div class="review-avatar">
+                                        V
+                                    </div>
+
+                                    <div>
+
+                                        <h3>
+                                            Vojta
+                                        </h3>
+
+                                        <span>
+                                        Osobní coaching
+                                    </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="review-stars">
+                                    ★★★★★
+                                </div>
+
+
+                                <p class="review-text">
+                                    „Trénovat s tebou mě opravdu moc baví! 💪🏼😁 Někdy mi dáš pořádně zabrat 🥵, ale není si na co stěžovat, vždycky skvěle pokecáme, zasmějeme se 😂 a celkově jsi super člověk a ještě víc trenér 🙌✨. Nejvíc se těším na naše plány do budoucna 🚀 a na to, jak se díky tobě zase posunu o kousek blíž ke svému cíli 🎯🔥. A hlavně nezapomenout na to že "Když to bolí tak to roste" 💪🏼🤩“
+                                </p>
+
+                            </div>
+
+
+                            <div class="review-progress">
+
+                                <div class="progress-title">
+
+                                <span>
+                                    PROMĚNA
+                                </span>
+
+                                    <span></span>
+
+                                </div>
+
+
+                                <div class="review-images">
+
+                                    <div class="review-image">
+
+                                    <span class="image-label">
+                                        PŘED
+                                    </span>
+
+                                        <img
+                                                src="images/reviews/vojtaPRED.JPG"
+                                                alt="Vojta před proměnou"
+                                        >
+
+                                    </div>
+
+
+                                    <div class="review-arrow-small">
+                                        →
+                                    </div>
+
+
+                                    <div class="review-image">
+
+                                    <span class="image-label">
+                                        PO
+                                    </span>
+
+                                        <img
+                                                src="images/reviews/vojtaPO.JPG"
+                                                alt="Vojta po proměně"
+                                        >
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- REVIEW 3 -->
+
+                        <article class="review-card">
+
+                            <div class="review-content">
+
+                                <div class="review-client">
+
+                                    <div class="review-avatar">
+                                        T
+                                    </div>
+
+                                    <div>
+
+                                        <h3>
+                                            Tomáš
+                                        </h3>
+
+                                        <span>
+                                        Osobní coaching
+                                    </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="review-stars">
+                                    ★★★★★
+                                </div>
+
+
+                                <p class="review-text">
+                                    „Za rok spoluprace s tebou, jsme udelali kus prace a velky progres. 💯💪🏽 Vidim to ja, moje okoli a i samotne telo se ted citi lepe😊. Diky tobe Domčo a tvemu vedeni je ted o dost lepsi. Opravdu jsem si nemohl vybrat lepe💯. Tvé trénování, planovani, sestavování jedilenicku a treninku, osobni setkani a i hovory je proste TOP⭐️ Dekuju ti, a verim, ze jeste kus prace mame pred sebou k dalsim progresum💪🏽💯👍“
+                                </p>
+
+                            </div>
+
+
+                            <div class="review-progress">
+
+                                <div class="progress-title">
+
+                                <span>
+                                    PROMĚNA
+                                </span>
+
+                                    <span></span>
+
+                                </div>
+
+
+                                <div class="review-images">
+
+                                    <div class="review-image">
+
+                                    <span class="image-label">
+                                        PŘED
+                                    </span>
+
+                                        <img
+                                                src="images/reviews/tomasPRED.JPG"
+                                                alt="Tomáš před proměnou"
+                                        >
+
+                                    </div>
+
+
+                                    <div class="review-arrow-small">
+                                        →
+                                    </div>
+
+
+                                    <div class="review-image">
+
+                                    <span class="image-label">
+                                        PO
+                                    </span>
+
+                                        <img
+                                                src="images/reviews/tomasPO.JPG"
+                                                alt="Tomáš po proměně"
+                                        >
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- REVIEW 4 -->
+
+                        <article class="review-card">
+
+                            <div class="review-content">
+
+                                <div class="review-client">
+
+                                    <div class="review-avatar">
+                                        T
+                                    </div>
+
+                                    <div>
+
+                                        <h3>
+                                            Tobiáš
+                                        </h3>
+
+                                        <span>
+                                        Osobní coaching
+                                    </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="review-stars">
+                                    ★★★★★
+                                </div>
+
+
+                                <p class="review-text">
+                                    „Nejen že mě Dominik naučil techniku, tak mě cvičení s ním baví, protože je to super člověk a tréninky s ním jsou vždy zábava. Také díky tomu že se s Dominikem bavím tak mě namotivoval na spoustu věcí. Jsem velmi rád za to že jsem se mohl s Dominikem setkat, velmi mi pomohl.“
+                                </p>
+
+                            </div>
+
+
+                            <div class="review-progress">
+
+                                <div class="progress-title">
+
+                                <span>
+                                    PROMĚNA
+                                </span>
+
+                                    <span></span>
+
+                                </div>
+
+
+                                <div class="review-images">
+
+                                    <div class="review-image">
+
+                                    <span class="image-label">
+                                        PŘED
+                                    </span>
+
+                                        <img
+                                                src="images/reviews/tobiasPRED.JPG"
+                                                alt="Tobiáš před proměnou"
+                                        >
+
+                                    </div>
+
+
+                                    <div class="review-arrow-small">
+                                        →
+                                    </div>
+
+
+                                    <div class="review-image">
+
+                                    <span class="image-label">
+                                        PO
+                                    </span>
+
+                                        <img
+                                                src="images/reviews/tobiasPO.JPG"
+                                                alt="Tobiáš po proměně"
+                                        >
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+                </div>
+
+
+                <button
+                        class="reviews-arrow reviews-next"
+                        type="button"
+                        aria-label="Další recenze"
+                >
+                    →
+                </button>
+
+            </div>
+
+
+
+            <div class="reviews-dots">
+
+                <button
+                        class="review-dot active"
+                        data-slide="0"
+                        aria-label="Recenze 1"
+                ></button>
+
+                <button
+                        class="review-dot"
+                        data-slide="1"
+                        aria-label="Recenze 2"
+                ></button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         CTA
+    ================================================== -->
+
+    <section
+            id="contact"
+            class="cta"
+    >
+
+        <div class="container">
+
+        <span class="section-subtitle">
+            PŘIPRAVEN ZAČÍT?
+        </span>
+
+
+            <h2 class="cta-title">
+
+                NAPIŠ MI NA
+
+                <span>
+                WHATSAPP
+            </span>
+
+            </h2>
+
+
+            <p>
+                Společně dosáhneme tvých cílů.
+            </p>
+
+
+            <a
+                    href="https://wa.me/420702064812"
+                    class="button button-primary"
+            >
+
+                <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                >
+
+                    <path
+                            d="M20 12C20 16.418 16.418 20 12 20C10.43 20 8.966 19.55 7.73 18.77L4 20L5.28 16.42C4.48 15.19 4 13.64 4 12C4 7.582 7.582 4 12 4C16.418 4 20 7.582 20 12Z"
+                            stroke="currentColor"
+                            stroke-width="2"
+                    />
+
+                </svg>
+
+                <span>
+                NAPIŠ MI NA WHATSAPP
+            </span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <p>
+            © 2026 Dominik Šišán
+        </p>
+
+
+        <div class="footer-socials">
+
+            <a
+                    href="#"
+                    aria-label="Instagram"
+            >
+
+                <img
+                        src="icons/instagram.svg"
+                        alt="Instagram"
+                >
+
+            </a>
+
+
+            <a
+                    href="#"
+                    aria-label="TikTok"
+            >
+
+                <img
+                        src="icons/tiktok.svg"
+                        alt="TikTok"
+                >
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
